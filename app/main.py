@@ -34,7 +34,7 @@ def main():
 
     print("\nAnalyzing files one by one with the LLM...")
 
-    analysisInstruction = load_instruction(os.path.join(promptDirectory, 'generate_coverage_report.yaml'))
+    analysisInstruction = load_instruction(os.path.join(promptDirectory, 'generate_report.yaml'))
     aggregatedAnalyses = []
 
     for currentFilePath in discoveredFiles:
